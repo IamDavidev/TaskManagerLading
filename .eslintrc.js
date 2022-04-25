@@ -4,7 +4,9 @@ module.exports = {
     es2021: true
   },
   extends: [
-    "standard"
+    "standard",
+    "eslint-config-prettier"
+
   ],
   parserOptions: {
     ecmaVersion: "latest",
