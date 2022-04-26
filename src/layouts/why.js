@@ -1,11 +1,11 @@
 class why extends HTMLElement {
-    constructor() {
-        super();
-        this.attachShadow({ mode: 'open' });
-    }
+  constructor() {
+    super();
+    this.attachShadow({ mode: 'open' });
+  }
 
-    static get styles() {
-        return /*css*/`
+  static get styles() {
+    return /*css*/`
         :host{
       }
 
@@ -35,7 +35,6 @@ class why extends HTMLElement {
       .whyTitle span{
         color:var(--color--primary);
       }
-
       .whyBtn{
           padding:23.5px 40px;
           border:none;
@@ -44,17 +43,19 @@ class why extends HTMLElement {
           font-weight:bold;
           border-radius:10px;
           margin-top:85px;
+          font-size:20px;
       }
+
     `;
 
-    }
+  }
 
-    connectedCallback() {
-        this.render();
-    }
+  connectedCallback() {
+    this.render();
+  }
 
-    render() {
-        this.shadowRoot.innerHTML =/*html*/`
+  render() {
+    this.shadowRoot.innerHTML =/*html*/`
         <style>${why.styles}</style>
      <div class='container'>
         <h2 class="whyTitle">
@@ -68,6 +69,6 @@ class why extends HTMLElement {
         </button>
      </div>
     `;
-    }
+  }
 }
 customElements.define('why-brutask', why);

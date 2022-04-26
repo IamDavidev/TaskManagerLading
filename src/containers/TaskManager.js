@@ -2,6 +2,7 @@ import '../layouts/NavBar.js'
 import '../layouts/Header.js'
 import '../layouts/gallery.js'
 import '../layouts/why.js'
+import '../layouts/WhyChooseUs.js'
 class TaskManager extends HTMLElement {
     constructor() {
         super();
@@ -56,8 +57,10 @@ class TaskManager extends HTMLElement {
             <header-task></header-task>
         </div>
         <main>
+            <!--TODO: component btn -->
             <gallery-task></gallery-task>
             <why-brutask></why-brutask>
+            <why-choose-us></why-choose-us>
         </main>
         <footer>
 
