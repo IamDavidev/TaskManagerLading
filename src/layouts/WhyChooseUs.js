@@ -37,6 +37,7 @@ class WhyChooseUs extends HTMLElement {
         display:flex;
         align-items:center;
         justify-content:center;
+        flex-wrap:wrap;
         gap:35px;
         margin:85px 0;
      }
@@ -47,6 +48,23 @@ class WhyChooseUs extends HTMLElement {
         background-color: var(--color--text);
         border-radius:10px;
         color:var(--color--primary);
+     }
+     @media (min-width:320px) and (max-width:768px){
+         .container{
+              margin-top:30px;
+         }
+         .titleWhy{
+            font-size:40px;
+         }
+         .textWhy{
+            width:auto;
+         }
+         .renderCards{
+            gap:20px;
+            flex-direction:column;
+            padding:1rem;
+            align-items:normal
+         }
      }
 
     `;
@@ -79,9 +97,7 @@ class WhyChooseUs extends HTMLElement {
                 content="allocate time for each task"
             ></card-why>
         </div>
-        <button class="btnWhy">
-            get Started for free
-        </button>
+        <btn-task content="get started for free"></btn-task>
      </div>
     `;
     }

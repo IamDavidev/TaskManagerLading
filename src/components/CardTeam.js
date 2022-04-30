@@ -58,6 +58,13 @@ class CardTeam extends HTMLElement {
             color:var(--color--secondary);
             font-weight:bold;
         }
+        @media (min-width:320px) and (max-width:768px){
+            .container{
+                min-width:100%;
+                width:100%
+            }
+
+        }
     `;
     }
 

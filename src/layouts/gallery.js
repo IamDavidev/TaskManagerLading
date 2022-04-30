@@ -22,8 +22,8 @@ class gallery extends HTMLElement {
       .cardGallery{
           display:flex;
           flex-direction:row;
-          alignItems: center;
-          
+          align-items: center;
+          flex-wrap:wrap;
       }
       .headerGallery{
           display:flex;
@@ -82,7 +82,18 @@ class gallery extends HTMLElement {
       .listImg{
             width:20px;
       }
-    
+      @media (min-width:320px) and (max-width:768px){
+          .container{
+              padding:1rem;
+              margin:5rem 1rem;
+          }
+          .cardGallery{
+                flex-direction:column;
+          }
+          .headerGallery{
+                flex-direction:column;
+          }
+      }
       `;
     }
 

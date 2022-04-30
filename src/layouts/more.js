@@ -66,6 +66,25 @@ class more extends HTMLElement {
           padding:5px;
           border-radius:30px;
       }
+      @media (min-width:320px) and (max-width:768px){
+          .container{
+              margin:30px 0;
+          }
+          .titleMore{
+              font-size:40px;
+          }
+          .card{
+              padding:1rem;
+              margin:1rem;
+              border-radius:1rem;
+          }
+          .renderCardTeams{
+              margin:1rem;
+              gap:20px;
+              flex-direction:column;
+              align-items:normal
+          }
+      }
     `;
     }
 

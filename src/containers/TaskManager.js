@@ -28,6 +28,9 @@ class TaskManager extends HTMLElement {
         }
         main{
             padding: 120px 130px;
+            display:flex;
+            flex-direction:column;
+            gap:120px;
         }
         @media (min-width:320px)and (max-width:480px){
             .header-task{

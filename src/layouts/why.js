@@ -45,7 +45,18 @@ class why extends HTMLElement {
           margin-top:85px;
           font-size:20px;
       }
+      @media (min-width:320px) and (max-width:768px){
+        .container{
+          margin-top:30px;
+        }
+        .whyTitle{
+          font-size:40px;
+        }
+        .whyText{
+          width:auto;
+        }
 
+      }
     `;
 
   }

@@ -77,7 +77,7 @@ class Header extends HTMLElement {
         <section class="headerContain">
             <h1 class="titleHeader"> Task - Manager for small teams.</h1>
             <p class="textHeader"> brustaks is a simple to-do list for small companies or teams</p>
-            <button class="btnHeader"> Get Started for free <img src="${arrowStarted}" alt="" /></button>
+            <btn-task content="get started for free"></btn-task>
         </section>
         <figure>
             <img src="${taskManager}" alt="Task Managaer" class="illustrationHeader"/> 

@@ -41,6 +41,19 @@ class YourTeam extends HTMLElement {
             opacity: .5;
             margin:40px 0;
         }
+        @media (min-width:320px) and (max-width:768px){
+            .container{
+                margin-top:30px;
+            }
+            .titleTeam{
+                font-size:40px;
+                width:auto;
+            }
+            .startYourTeam{
+                font-size:16px;
+                width:auto;
+            }
+        }
     `;
     }
 

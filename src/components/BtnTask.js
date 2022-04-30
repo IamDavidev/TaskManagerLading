@@ -25,6 +25,12 @@ class BtnTask extends HTMLElement {
         background-color:var(--color--primary);
         color: var(--color--text);
       }
+      @media screen (min-width:320px ) and (max-width:768px){
+        .btnRender{
+            font-size:14px;
+            padding:10px 20px; 
+        }
+      }
     `;
   }
 

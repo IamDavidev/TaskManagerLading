@@ -40,6 +40,12 @@ class CardWhy extends HTMLElement {
       .headerCard{
           margin:45px 0;
       }
+      @media (min-width:320px) and (max-width:768px){
+          .container{
+              width:100%;
+                height:auto;
+          }
+      }
     `;
     }
 
