@@ -26,7 +26,7 @@ class CardWhy extends HTMLElement {
             justify-content:center;
             align-items:center;
             border-radius:30px;
-            border:1px solid var(--color--primary);
+            border:1px solid var(--color--text);
       }
       .titleCard{
           font-size:30px;
@@ -34,7 +34,7 @@ class CardWhy extends HTMLElement {
           font-weight:bold;
       }
       .contentCard{
-          width:60%;
+          width:50%;
           margin:auto;    
       }
       .headerCard{

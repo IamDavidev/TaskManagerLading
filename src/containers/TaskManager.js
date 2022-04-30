@@ -1,4 +1,5 @@
 import '../layouts/NavBar.js'
+import '../layouts/more.js'
 import '../layouts/Header.js'
 import '../layouts/gallery.js'
 import '../layouts/why.js'
@@ -61,6 +62,7 @@ class TaskManager extends HTMLElement {
             <gallery-task></gallery-task>
             <why-brutask></why-brutask>
             <why-choose-us></why-choose-us>
+            <more-tasks></more-tasks>
         </main>
         <footer>
 
