@@ -4,6 +4,9 @@ import '../layouts/Header.js'
 import '../layouts/gallery.js'
 import '../layouts/why.js'
 import '../layouts/WhyChooseUs.js'
+import '../layouts/YourTeam.js'
+import '../components/BtnTask.js'
+
 class TaskManager extends HTMLElement {
     constructor() {
         super();
@@ -63,6 +66,7 @@ class TaskManager extends HTMLElement {
             <why-brutask></why-brutask>
             <why-choose-us></why-choose-us>
             <more-tasks></more-tasks>
+            <your-team></your-team>
         </main>
         <footer>
 

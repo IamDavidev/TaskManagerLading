@@ -1,29 +1,49 @@
 class BtnTask extends HTMLElement {
-    constructor() {
-        super();
-        this.attachShadow({ mode: 'open' });
-    }
+  constructor() {
+    super();
+    this.attachShadow({ mode: 'open' });
+  }
 
-    static get styles() {
-        return /*css*/`
+  static get styles() {
+    return /*css*/`
         :host{
-
+      }
+      .btnRender{
+        margin: 70px 0;
+        background-color:var(--color--text);
+        color:var(--color--primary);
+        font-weight:bold;
+        font-size:20px;
+        display:flex;
+        align-items:center;
+        padding:23px 40px;
+        border:none;
+        border-radius:10px;
+        transition: all 0.3s ease-in-out;
+      }
+      .btnRender:hover{
+        background-color:var(--color--primary);
+        color: var(--color--text);
       }
     `;
-    }
+  }
 
-    connectedCallback() {
-        this.render();
-        this.content = this.getAttribute('content');
-    }
+  connectedCallback() {
+    this.content = this.getAttribute('content');
+    this.render();
+  }
 
-    render() {
-        this.shadowRoot.innerHTML =/*html*/`
+  render() {
+    this.shadowRoot.innerHTML =/*html*/`
         <style>${BtnTask.styles}</style>
      <div class='container'>
-        btn 
+        <div clas="contentBtn">
+            <button class="btnRender">
+                ${this.content}
+            </button>
+        </div>
      </div>
     `;
-    }
+  }
 }
 customElements.define('btn-task', BtnTask);

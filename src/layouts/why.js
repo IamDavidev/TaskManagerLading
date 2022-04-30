@@ -64,9 +64,7 @@ class why extends HTMLElement {
         <p class="whyText">
             The experience is pretty much like writing your daily tasks on a sticky note!!.   
         </p>
-        <button class="whyBtn">
-            check out our blog now!
-        </button>
+        <btn-task content="check out our blog now"></btn-task>
      </div>
     `;
   }
